@@ -1,6 +1,8 @@
 from pattern_utils import *
 from pattern_grid import *
 
+grid = grid16x
+
 setup(grid)
 
 while True:
