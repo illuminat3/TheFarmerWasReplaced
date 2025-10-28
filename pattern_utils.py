@@ -27,7 +27,9 @@ def setup(grid_layout):
 		for y in x:
 			if get_entity_type() != y:
 				plant_entity(y)
-			
+			if can_harvest():
+				harvest()
+				plant_entity(y)
 			move(North)
 		move(East)
 
